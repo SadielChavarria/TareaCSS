@@ -1,0 +1,35 @@
+/*Estilos Generales*/
+* {
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+}
+
+/* estilos del encabezado y menu */
+header {
+	background: #5b7989;
+	color: white;
+	text-shadow: 2px 2px 4px #02010a;
+	border-radius: 10px 10px 0px 0px;
+	position: relative;
+	padding: 10px;
+}
+
+.header1 {
+	display: inline-block;
+	position: relative;
+}
+
+.menunav {
+	position: absolute;
+	right: 2%;
+}
+
+header nav ul li{
+	display: inline-block;
+	margin: 5px;
+}
+
+header nav ul li a{
+	color: white;
+}
