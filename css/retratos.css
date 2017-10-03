@@ -1,18 +1,28 @@
-/*Estilos Generales*/
 * {
-	text-decoration: none;
-	list-style: none;
-	margin: 0;
+	font-family: 'Dancing Script', cursive;
+	color: white;
+}
+
+img {
+	box-shadow: 2px 2px 3px #02010a;
+}
+
+#contenido {
+	max-width: 900px;
+	margin: 0 auto;
+
+}
+
+body {
+	background-color:  #02010a;
 }
 
 /* estilos del encabezado y menu */
 header {
 	background: #5b7989;
-	color: white;
 	text-shadow: 2px 2px 4px #02010a;
 	border-radius: 10px 10px 0px 0px;
 	position: relative;
-	padding: 10px;
 }
 
 .header1 {
@@ -23,13 +33,70 @@ header {
 .menunav {
 	position: absolute;
 	right: 2%;
+	top: 20%;
 }
 
 header nav ul li{
 	display: inline-block;
-	margin: 5px;
+	margin: 0px 5px;
 }
 
 header nav ul li a{
 	color: white;
 }
+
+/* estilos de las imagenes */ 
+
+.galeria {
+
+}
+
+.galeria img {
+	max-width: 30%;
+	border: 1px solid black;
+	margin: 10px;
+	box-shadow: 2px 2px 8px #02010a;
+
+}
+
+.paisajes {
+	height: 200px;
+}
+
+
+#r1 {
+	filter: blur(10px);
+}
+
+.paisajes:nth-child(even) {
+	filter: grayscale(100%);
+}
+
+#r3 {
+	filter: sepia(90%);
+}
+
+
+/* pie de pagina */
+
+footer {
+	background: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	padding: 2%;
+	border-radius: 0 0 10px 10px;
+}
+
+footer div {
+	width: 25%;
+	color: black;
+}
+
+footer div p, footer div p a {
+	color: black;
+}
+
+footer div h2 {
+	color: black;
+}
+

@@ -47,8 +47,54 @@ header nav ul li a{
 
 /* estilos de las imagenes */ 
 
-.galeria section img {
-	width: 33.33%;
+.galeria {
+
 }
 
+.galeria img {
+	max-width: 30%;
+	border: 1px solid black;
+	margin: 10px;
+	box-shadow: 2px 2px 8px #02010a;
+
+}
+
+.paisajes {
+	height: 200px;
+}
+
+
+#p1 {
+	filter: blur(10px);
+}
+
+.paisajes:nth-child(even) {
+	filter: grayscale(100%);
+}
+
+#p3 {
+	filter: sepia(90%);
+}
+
+
+footer {
+	background: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	padding: 2%;
+	border-radius: 0 0 10px 10px;
+}
+
+footer div {
+	width: 25%;
+	color: black;
+}
+
+footer div p, footer div p a {
+	color: black;
+}
+
+footer div h2 {
+	color: black;
+}
 

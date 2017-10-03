@@ -47,7 +47,14 @@ header nav ul li a{
 	color: white;
 }
 
-
+.fila {
+	position: relative;
+	margin: auto;
+	width: 100%;
+	height: auto;	
+	clear: both;
+	display: table;
+}
 /*Estilo para la imagen principal centrada */
 
 
@@ -134,3 +141,36 @@ footer div h2 {
 	color: black;
 }
 
+
+/* aca empieza la adaptabilidad en dispositivos */
+
+@media(max-width: 899px) {
+
+
+
+	header {
+		width: 100%;
+		display: block;
+	}
+
+
+	header h1{
+		display: block;
+		width: 100%;
+
+	}
+	
+	header nav{
+		display: block;
+		width: 100%;
+	}
+
+	#contenido figure {
+		width: 100%;
+	}
+
+	#contenido .dosimagenes div {
+		width: 100%;
+	}
+
+}
