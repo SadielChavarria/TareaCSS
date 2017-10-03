@@ -1,18 +1,28 @@
-/*Estilos Generales*/
-* {
-	text-decoration: none;
-	list-style: none;
-	margin: 0;
+ * {
+	font-family: 'Dancing Script', cursive;
+	color: white;
+}
+
+img {
+	box-shadow: 2px 2px 3px #02010a;
+}
+
+#contenido {
+	max-width: 900px;
+	margin: 0 auto;
+
+}
+
+body {
+	background-color:  #02010a;
 }
 
 /* estilos del encabezado y menu */
 header {
 	background: #5b7989;
-	color: white;
 	text-shadow: 2px 2px 4px #02010a;
 	border-radius: 10px 10px 0px 0px;
 	position: relative;
-	padding: 10px;
 }
 
 .header1 {
@@ -23,13 +33,22 @@ header {
 .menunav {
 	position: absolute;
 	right: 2%;
+	top: 20%;
 }
 
 header nav ul li{
 	display: inline-block;
-	margin: 5px;
+	margin: 0px 5px;
 }
 
 header nav ul li a{
 	color: white;
 }
+
+/* estilos de las imagenes */ 
+
+.galeria section img {
+	width: 33.33%;
+}
+
+

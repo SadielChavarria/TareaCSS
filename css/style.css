@@ -1,11 +1,30 @@
+* {
+	font-family: 'Dancing Script', cursive;
+	color: white;
+}
+
+img {
+	box-shadow: 2px 2px 3px #02010a;
+}
+
+
+
+#contenido {
+	max-width: 900px;
+	margin: 0 auto;
+
+}
+
+body {
+	background-color:  #02010a;
+}
+
 /* estilos del encabezado y menu */
 header {
 	background: #5b7989;
-	color: white;
 	text-shadow: 2px 2px 4px #02010a;
 	border-radius: 10px 10px 0px 0px;
 	position: relative;
-	
 }
 
 .header1 {
@@ -16,12 +35,12 @@ header {
 .menunav {
 	position: absolute;
 	right: 2%;
-	top: 35%;
+	top: 20%;
 }
 
 header nav ul li{
 	display: inline-block;
-	margin: 5px;
+	margin: 0px 5px;
 }
 
 header nav ul li a{
@@ -31,16 +50,17 @@ header nav ul li a{
 
 /*Estilo para la imagen principal centrada */
 
+
+
 .imgcentrada {
 	background: #82c3a6;
 	padding: 1%;
 	position: relative;
-
 }
 
 figure img {
 	width: 85%;
-	height: 400px;
+	max-height: 400px;
 	display: block;
 	margin: 0 auto;
 
@@ -48,16 +68,18 @@ figure img {
 
 
 /* SECCION DE DOS IMAGENES */
+
+
 .dosimagenes {
 	background: #d5c75f;
+	border: 1px solid black;
 	width: 100%;
 	display: flex;
 	flex-direction: row;
-}
-
-.dosimagenes div {
 
 }
+
+
 
 .dosimagenes div p {
 	margin-top: 10px;
@@ -70,19 +92,45 @@ figure img {
 }
 
 .dosimagenes div a img {
-	border: 1px solid black;
 	width: 80%;
+	transition: transform 1s, box-shadow 1s, border 1s;
 }
-
-.dosimagenes #imgizq {
-	/*box-shadow: 2px 2px 2px #82c3a6;*/
-}
-
 
 .dosimagenes #imgizq a > img:hover {
 	transform: rotate(10deg);
+	box-shadow: 2px 2px 3px #82c3a6;
+	border: 2px solid black;
 }
 
+.dosimagenes #imgder a > img:hover {
+	transform: translate(5px, -20px);
+	box-shadow: 2px 2px 3px #82c3a6;
+	border: 2px solid black;
+}
+
+/* ACA FINALIZA EL ESTILO DE LAS DOS IMAGENES */
 
 
+/* ACA EMPIEZA EL ESTILO DEL PIE DE PAGINA */
+
+footer {
+	background: #C6d5c5;
+	display: flex;
+	flex-direction: row;
+	padding: 2%;
+	border-radius: 0 0 10px 10px;
+}
+
+footer div {
+	width: 25%;
+	color: black;
+}
+
+footer div p, footer div p a {
+	color: black;
+}
+
+footer div h2 {
+	color: black;
+}
 
