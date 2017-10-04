@@ -60,7 +60,7 @@ header nav ul li a{
 }
 
 .paisajes {
-	height: 200px;
+	min-height: 200px;
 }
 
 
@@ -98,3 +98,81 @@ footer div h2 {
 	color: black;
 }
 
+
+
+/* aca empieza la adaptabilidad en dispositivos */
+
+@media(max-width: 899px) {
+
+
+
+	/* configurando el encabezado */
+
+	header {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header1 {
+		display: inline-block;
+		position: relative;
+	}
+
+
+	header h1{
+		display: block;
+		text-align: center;
+		width: 100%;
+	}
+	header nav{
+		display: block;
+		width: 100%;
+	}
+
+	.menunav {
+		position: none;
+		text-align:center;
+		right: 2%;
+		top: 20%;
+	}
+
+	.menunav ul li a {
+		font-size: 1.5em;
+	}
+
+	/*	Configuracion de la galeria  */
+
+	.galeria {
+		width: 100%;
+	}
+
+	.galeria img {
+		display: flex;
+		flex-direction: column;
+		max-width: 100%;
+	}
+
+	.paisaje {
+		max-height: 400px;
+	}
+
+	/* configurando el pie de pagina */
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		width: 96%;
+		font-size: 1.5em;
+
+	}
+
+	footer > div {
+		width: 96%
+	}
+
+
+
+	
+
+}

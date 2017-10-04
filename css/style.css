@@ -3,11 +3,9 @@
 	color: white;
 }
 
-img {
+.imgcentrada img, .dosimagenes > div > a > img {
 	box-shadow: 2px 2px 3px #02010a;
 }
-
-
 
 #contenido {
 	max-width: 900px;
@@ -47,30 +45,20 @@ header nav ul li a{
 	color: white;
 }
 
-.fila {
-	position: relative;
-	margin: auto;
-	width: 100%;
-	height: auto;	
-	clear: both;
-	display: table;
-}
 /*Estilo para la imagen principal centrada */
 
 
 
 .imgcentrada {
 	background: #82c3a6;
-	padding: 1%;
-	position: relative;
+	padding: 2%;
 }
 
-figure img {
+.imgcentrada img {
 	width: 85%;
 	max-height: 400px;
 	display: block;
 	margin: 0 auto;
-
 }
 
 
@@ -145,32 +133,77 @@ footer div h2 {
 /* aca empieza la adaptabilidad en dispositivos */
 
 @media(max-width: 899px) {
-
-
+	/* configurando el encabezado */
 
 	header {
 		width: 100%;
-		display: block;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.header1 {
+		display: inline-block;
+		position: relative;
 	}
 
 
 	header h1{
 		display: block;
+		text-align: center;
 		width: 100%;
-
 	}
-	
 	header nav{
 		display: block;
 		width: 100%;
 	}
 
-	#contenido figure {
-		width: 100%;
+	.menunav {
+		position: none;
+		text-align:center;
+		right: 2%;
+		top: 20%;
 	}
 
-	#contenido .dosimagenes div {
-		width: 100%;
+	.menunav ul li a {
+		font-size: 1.5em;
 	}
+
+	/*	Configuracion de la la imagen que va centrada */
+
+	.imgcentrada img{
+		width: 100%;
+
+	}
+
+	/* configuracion de las dos imagenes */
+
+	.dosimagenes {
+		display: flex;
+		flex-direction: column;
+		width: 100%
+	}
+
+	.dosimagenes div a img, .dosimagenes div {
+		width: 98%;
+		padding: 0.5%;
+	}
+
+
+	/* configurando el pie de pagina */
+
+	footer {
+		display: flex;
+		flex-direction: column;
+		width: 96%;
+		font-size: 1.5em;
+
+	}
+
+	footer > div {
+		width: 96%
+	}
+
+
+
 
 }
